@@ -50,15 +50,10 @@ def main():
         match needed_outcome:
             case 'win':
                 total_scores += shape_map[to_win_map[choices[0]]] + outcome_map[needed_outcome];
-                continue;
-
             case 'draw':
                 total_scores += shape_map[to_draw_map[choices[0]]] + outcome_map[needed_outcome];
-                continue;
-
             case 'lose':
                 total_scores += shape_map[to_lose_map[choices[0]]] + outcome_map[needed_outcome];
-                continue;
 
     print(total_scores);
     
